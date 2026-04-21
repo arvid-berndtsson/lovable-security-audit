@@ -1,0 +1,10 @@
+{
+  "name": "lovable-security-audit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit": "bun run scripts/lovable-exposure-audit.ts",
+    "audit:help": "bun run scripts/lovable-exposure-audit.ts --help"
+  }
+}

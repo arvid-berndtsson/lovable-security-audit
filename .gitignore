@@ -137,3 +137,12 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Local security-audit artifacts
+reports/
+targets.txt
+targets.local*.txt
+.playwright-mcp/
+
+# OS files
+.DS_Store

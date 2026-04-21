@@ -1,0 +1,4 @@
+# One target URL per line (published URL or custom domain)
+# You can include with or without scheme.
+my-app.lovable.app
+https://my-sensitive-internal-app.example.com
