@@ -659,7 +659,9 @@ function buildMarkdownReport(
       const low = report.findings.filter((f) => f.severity === "low").length;
       const homepageStatus = report.homepage.status ?? "ERR";
       const homepageTitle = report.homepage.snippet || "";
-      return `| ${report.target} | ${homepageStatus} | ${high} | ${medium} | ${low} | ${homepageTitle.replace(/\|/g, "\\|")} |`;
+      return `| ${report.target} | ${homepageStatus} | ${high} | ${medium} | ${low} | ${homepageTitle
+        .replace(/\\/g, "\\\\")
+        .replace(/\|/g, "\\|")} |`;
     })
     .join("\n");
 
